@@ -61,7 +61,6 @@ public class ExtraCredit {
             } else if ("-1".equals(input)) {
                 input = "-1";
             }
-            System.out.print(items);
         }
 
         System.out.println(calculateTip(people,percent,cost,items));
