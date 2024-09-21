@@ -55,8 +55,12 @@ public class ExtraCredit {
         items += "\n";
         while (!"-1".equals(input)) {
             System.out.print("Enter an item name or type '-1' to finish: ");
-            items += scan.nextLine();
-            items += "\n";
+            input = scan.nextLine();
+            if (!"-1".equals(input)) {
+                items += input + "\n";
+            } else if ("-1".equals(input)) {
+                input = "-1";
+            }
             System.out.print(items);
         }
 
